@@ -1,0 +1,6 @@
+framework module Pods_GMusicTests {
+  umbrella header "Pods-GMusicTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AC5FBA17EF740E784209780 /* Pods_GMusic_GMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3F76EDAC240556090A99AD /* Pods_GMusic_GMusicUITests.framework */; };
+		A7A65E3D43AE23594D1AC3ED /* Pods_GMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693A9932CAB1AF35C13F1790 /* Pods_GMusicTests.framework */; };
+		BE0B99F6BA511B0BE3A32DC9 /* Pods_GMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB29A11D9231EC936330B5F /* Pods_GMusic.framework */; };
+		EA076E1326507CC800FFE94B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA076E1226507CC800FFE94B /* PlayerViewController.swift */; };
 		EA0BEA4E26374596009EDE74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA4D26374596009EDE74 /* AppDelegate.swift */; };
 		EA0BEA5026374596009EDE74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA4F26374596009EDE74 /* SceneDelegate.swift */; };
 		EA0BEA5226374596009EDE74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA5126374596009EDE74 /* ViewController.swift */; };
@@ -15,6 +19,11 @@
 		EA0BEA5A26374597009EDE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0BEA5826374597009EDE74 /* LaunchScreen.storyboard */; };
 		EA0BEA6526374598009EDE74 /* GMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA6426374598009EDE74 /* GMusicTests.swift */; };
 		EA0BEA7026374598009EDE74 /* GMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA6F26374598009EDE74 /* GMusicUITests.swift */; };
+		EAA0C4712639C2A10028EC2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C4702639C2A10028EC2B /* RegisterViewController.swift */; };
+		EAA0C473263AC20E0028EC2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */; };
+		EAA0C475263C54760028EC2B /* SongSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C474263C54760028EC2B /* SongSearchViewController.swift */; };
+		EAA0C477263C768D0028EC2B /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */; };
+		EAA0C479263C93420028EC2B /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C478263C93420028EC2B /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1923008D34DEF05793749B11 /* Pods-GMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusicTests.release.xcconfig"; path = "Target Support Files/Pods-GMusicTests/Pods-GMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F94ABD11DF138593509ECD1 /* Pods-GMusic-GMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusic-GMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		551870E2E7271DE4D9A3F7AD /* Pods-GMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-GMusicTests/Pods-GMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1AFE5DA129D139944A05A1 /* Pods-GMusic-GMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusic-GMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F3F76EDAC240556090A99AD /* Pods_GMusic_GMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMusic_GMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693A9932CAB1AF35C13F1790 /* Pods_GMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEE5F4979FA41A2665D1DDA /* Pods-GMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusic.release.xcconfig"; path = "Target Support Files/Pods-GMusic/Pods-GMusic.release.xcconfig"; sourceTree = "<group>"; };
+		98BD14B3772466597504000A /* Pods-GMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMusic.debug.xcconfig"; path = "Target Support Files/Pods-GMusic/Pods-GMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		9AB29A11D9231EC936330B5F /* Pods_GMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA076E1226507CC800FFE94B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		EA0BEA4A26374596009EDE74 /* GMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0BEA4D26374596009EDE74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0BEA4F26374596009EDE74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,12 @@
 		EA0BEA6B26374598009EDE74 /* GMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0BEA6F26374598009EDE74 /* GMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMusicUITests.swift; sourceTree = "<group>"; };
 		EA0BEA7126374598009EDE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA0C4702639C2A10028EC2B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAA0C474263C54760028EC2B /* SongSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchViewController.swift; sourceTree = "<group>"; };
+		EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		EAA0C478263C93420028EC2B /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		EAA0C47A263C94EF0028EC2B /* GMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMusic-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0B99F6BA511B0BE3A32DC9 /* Pods_GMusic.framework in Frameworks */,
+				EAA0C479263C93420028EC2B /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A65E3D43AE23594D1AC3ED /* Pods_GMusicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC5FBA17EF740E784209780 /* Pods_GMusic_GMusicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91D0BEC5BBC6102E8B0E6A29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA0C478263C93420028EC2B /* SpotifyiOS.framework */,
+				9AB29A11D9231EC936330B5F /* Pods_GMusic.framework */,
+				5F3F76EDAC240556090A99AD /* Pods_GMusic_GMusicUITests.framework */,
+				693A9932CAB1AF35C13F1790 /* Pods_GMusicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B36AA5313712A4DA75875F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98BD14B3772466597504000A /* Pods-GMusic.debug.xcconfig */,
+				7AEE5F4979FA41A2665D1DDA /* Pods-GMusic.release.xcconfig */,
+				5E1AFE5DA129D139944A05A1 /* Pods-GMusic-GMusicUITests.debug.xcconfig */,
+				2F94ABD11DF138593509ECD1 /* Pods-GMusic-GMusicUITests.release.xcconfig */,
+				551870E2E7271DE4D9A3F7AD /* Pods-GMusicTests.debug.xcconfig */,
+				1923008D34DEF05793749B11 /* Pods-GMusicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA0BEA4126374596009EDE74 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +136,8 @@
 				EA0BEA6326374598009EDE74 /* GMusicTests */,
 				EA0BEA6E26374598009EDE74 /* GMusicUITests */,
 				EA0BEA4B26374596009EDE74 /* Products */,
+				C1B36AA5313712A4DA75875F /* Pods */,
+				91D0BEC5BBC6102E8B0E6A29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +155,18 @@
 			isa = PBXGroup;
 			children = (
 				EA0BEA4D26374596009EDE74 /* AppDelegate.swift */,
+				EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */,
 				EA0BEA4F26374596009EDE74 /* SceneDelegate.swift */,
 				EA0BEA5126374596009EDE74 /* ViewController.swift */,
 				EA0BEA5326374596009EDE74 /* Main.storyboard */,
 				EA0BEA5626374597009EDE74 /* Assets.xcassets */,
 				EA0BEA5826374597009EDE74 /* LaunchScreen.storyboard */,
 				EA0BEA5B26374597009EDE74 /* Info.plist */,
+				EAA0C4702639C2A10028EC2B /* RegisterViewController.swift */,
+				EAA0C474263C54760028EC2B /* SongSearchViewController.swift */,
+				EA076E1226507CC800FFE94B /* PlayerViewController.swift */,
+				EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */,
+				EAA0C47A263C94EF0028EC2B /* GMusic-Bridging-Header.h */,
 			);
 			path = GMusic;
 			sourceTree = "<group>";
@@ -135,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA0BEA7426374598009EDE74 /* Build configuration list for PBXNativeTarget "GMusic" */;
 			buildPhases = (
+				B12FECA7F3387D77F4629BA5 /* [CP] Check Pods Manifest.lock */,
 				EA0BEA4626374596009EDE74 /* Sources */,
 				EA0BEA4726374596009EDE74 /* Frameworks */,
 				EA0BEA4826374596009EDE74 /* Resources */,
+				13B9201F84ECAE94D6F3D4E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA0BEA7726374598009EDE74 /* Build configuration list for PBXNativeTarget "GMusicTests" */;
 			buildPhases = (
+				5BB200E2371AFE001DAD2B04 /* [CP] Check Pods Manifest.lock */,
 				EA0BEA5C26374598009EDE74 /* Sources */,
 				EA0BEA5D26374598009EDE74 /* Frameworks */,
 				EA0BEA5E26374598009EDE74 /* Resources */,
@@ -170,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA0BEA7A26374598009EDE74 /* Build configuration list for PBXNativeTarget "GMusicUITests" */;
 			buildPhases = (
+				B1D2E4DEBEF5409ECB288E89 /* [CP] Check Pods Manifest.lock */,
 				EA0BEA6726374598009EDE74 /* Sources */,
 				EA0BEA6826374598009EDE74 /* Frameworks */,
 				EA0BEA6926374598009EDE74 /* Resources */,
+				7AEE112BF738795DC0E257EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0BEA5A26374597009EDE74 /* LaunchScreen.storyboard in Resources */,
+				EAA0C473263AC20E0028EC2B /* GoogleService-Info.plist in Resources */,
 				EA0BEA5726374597009EDE74 /* Assets.xcassets in Resources */,
 				EA0BEA5526374596009EDE74 /* Main.storyboard in Resources */,
 			);
@@ -253,14 +320,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13B9201F84ECAE94D6F3D4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB200E2371AFE001DAD2B04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMusicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AEE112BF738795DC0E257EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12FECA7F3387D77F4629BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1D2E4DEBEF5409ECB288E89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMusic-GMusicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA0BEA4626374596009EDE74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA0C4712639C2A10028EC2B /* RegisterViewController.swift in Sources */,
 				EA0BEA5226374596009EDE74 /* ViewController.swift in Sources */,
 				EA0BEA4E26374596009EDE74 /* AppDelegate.swift in Sources */,
+				EA076E1326507CC800FFE94B /* PlayerViewController.swift in Sources */,
 				EA0BEA5026374596009EDE74 /* SceneDelegate.swift in Sources */,
+				EAA0C475263C54760028EC2B /* SongSearchViewController.swift in Sources */,
+				EAA0C477263C768D0028EC2B /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,18 +607,25 @@
 		};
 		EA0BEA7526374598009EDE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BD14B3772466597504000A /* Pods-GMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BFU58S3ZWP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grigarazh.GMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMusic/GMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,18 +633,25 @@
 		};
 		EA0BEA7626374598009EDE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEE5F4979FA41A2665D1DDA /* Pods-GMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BFU58S3ZWP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grigarazh.GMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMusic/GMusic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +659,7 @@
 		};
 		EA0BEA7826374598009EDE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551870E2E7271DE4D9A3F7AD /* Pods-GMusicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +682,7 @@
 		};
 		EA0BEA7926374598009EDE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1923008D34DEF05793749B11 /* Pods-GMusicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +705,7 @@
 		};
 		EA0BEA7B26374598009EDE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1AFE5DA129D139944A05A1 /* Pods-GMusic-GMusicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +726,7 @@
 		};
 		EA0BEA7C26374598009EDE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F94ABD11DF138593509ECD1 /* Pods-GMusic-GMusicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
