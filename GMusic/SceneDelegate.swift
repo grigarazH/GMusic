@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import GoogleSignIn
+import MediaPlayer
+import AVFoundation
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate{
     
@@ -14,6 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate{
     let SpotifyRedirectURL = URL(string: "gmusic://callback")!
     
     public var accessToken = ""
+    
+    var playlist: MusicPlaylist?
+    var currentTrackId = 0
+    var musicTrack: MusicTrack?
+    var musicSourceViewController: UIViewController?
+    var isAvPlayerPlaying = false
     
     lazy var configuration = SPTConfiguration(
       clientID: SpotifyClientID,
@@ -42,6 +52,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate{
         } else if let error_description = parameters?[SPTAppRemoteErrorDescriptionKey] {
             // Show the error
         }
+        GIDSignIn.sharedInstance().handle(url)
+        ApplicationDelegate.shared.application(
+                UIApplication.shared,
+                open: url,
+                sourceApplication: nil,
+                annotation: [UIApplication.OpenURLOptionsKey.annotation]
+            )
+
     }
 
 
@@ -66,6 +84,48 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate{
         if let _ = self.appRemote.connectionParameters.accessToken {
             self.appRemote.connect()
         }
+        if isAvPlayerPlaying{
+            let nowPlayingInfo = MPNowPlayingInfoCenter.default().nowPlayingInfo!
+        guard let musicSourceViewController = musicSourceViewController else {return}
+            guard let musicTrack = musicTrack else {return}
+            if let songSearchViewController = musicSourceViewController as? SongSearchViewController {
+                songSearchViewController.position = Int((nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] as! Double) * 1000)
+                songSearchViewController.trackProgressView.progress = Float(songSearchViewController.position)/Float(musicTrack.duration)
+                let playerRate = nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] as! Double
+                if playerRate == 1.0 {
+                    songSearchViewController.isPaused = false
+                    songSearchViewController.playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+                }else{
+                    songSearchViewController.isPaused = true
+                    songSearchViewController.playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+                }
+            }
+            if let libraryViewController = musicSourceViewController as? LibraryViewController {
+                libraryViewController.position = Int((nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] as! Double) * 1000)
+                libraryViewController.trackProgressVIew.progress = Float(libraryViewController.position)/Float(musicTrack.duration)
+                let playerRate = nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] as! Double
+                if playerRate == 1.0 {
+                    libraryViewController.isPaused = false
+                    libraryViewController.playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+                }else{
+                    libraryViewController.isPaused = true
+                    libraryViewController.playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+                }
+            }
+            if let playlistViewController = musicSourceViewController as? PlaylistViewController {
+                playlistViewController.position = Int((nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] as! Double) * 1000)
+                playlistViewController.trackProgressBar.progress = Float(playlistViewController.position)/Float(playlist!.tracks[currentTrackId].duration)
+                playlistViewController.currentTrackId = currentTrackId
+                let playerRate = nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] as! Double
+                if playerRate == 1.0 {
+                    playlistViewController.isPaused = false
+                    playlistViewController.trackPlayButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+                }else{
+                    playlistViewController.isPaused = true
+                    playlistViewController.trackPlayButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+                }
+            }
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -75,16 +135,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate{
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+        
     }
+    
 
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
 
 }
 

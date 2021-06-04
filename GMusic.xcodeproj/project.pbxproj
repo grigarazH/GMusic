@@ -19,8 +19,20 @@
 		EA0BEA5A26374597009EDE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0BEA5826374597009EDE74 /* LaunchScreen.storyboard */; };
 		EA0BEA6526374598009EDE74 /* GMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA6426374598009EDE74 /* GMusicTests.swift */; };
 		EA0BEA7026374598009EDE74 /* GMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BEA6F26374598009EDE74 /* GMusicUITests.swift */; };
+		EA296FDB265EC882002C0FD6 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FDA265EC882002C0FD6 /* LibraryViewController.swift */; };
+		EA296FDD265ED23E002C0FD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA296FDC265ED23E002C0FD6 /* GoogleService-Info.plist */; };
+		EA296FDF265EF112002C0FD6 /* CreatePlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FDE265EF112002C0FD6 /* CreatePlaylistViewController.swift */; };
+		EA296FE1265F0B84002C0FD6 /* SelectPlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FE0265F0B84002C0FD6 /* SelectPlaylistTableViewController.swift */; };
+		EA296FE4265F0FFE002C0FD6 /* GMusicModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA296FE2265F0FFE002C0FD6 /* GMusicModel.xcdatamodeld */; };
+		EA296FEF265F4663002C0FD6 /* Track+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FED265F4663002C0FD6 /* Track+CoreDataClass.swift */; };
+		EA296FF0265F4663002C0FD6 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FEE265F4663002C0FD6 /* Track+CoreDataProperties.swift */; };
+		EA296FF2265FECEC002C0FD6 /* OfflineLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FF1265FECEC002C0FD6 /* OfflineLibraryViewController.swift */; };
+		EA296FF42664E348002C0FD6 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FF32664E348002C0FD6 /* ProfileTableViewCell.swift */; };
+		EA296FF626650129002C0FD6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296FF526650129002C0FD6 /* ProfileViewController.swift */; };
+		EA4C707E265E8252004B29AF /* MusicTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4C707D265E8252004B29AF /* MusicTrack.swift */; };
+		EA4C7080265E8270004B29AF /* MusicPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4C707F265E8270004B29AF /* MusicPlaylist.swift */; };
+		EA862988265D2C4800CA153A /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA862987265D2C4800CA153A /* PlaylistViewController.swift */; };
 		EAA0C4712639C2A10028EC2B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C4702639C2A10028EC2B /* RegisterViewController.swift */; };
-		EAA0C473263AC20E0028EC2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */; };
 		EAA0C475263C54760028EC2B /* SongSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C474263C54760028EC2B /* SongSearchViewController.swift */; };
 		EAA0C477263C768D0028EC2B /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */; };
 		EAA0C479263C93420028EC2B /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0C478263C93420028EC2B /* SpotifyiOS.framework */; };
@@ -68,8 +80,20 @@
 		EA0BEA6B26374598009EDE74 /* GMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0BEA6F26374598009EDE74 /* GMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMusicUITests.swift; sourceTree = "<group>"; };
 		EA0BEA7126374598009EDE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA296FDA265EC882002C0FD6 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		EA296FDC265ED23E002C0FD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA296FDE265EF112002C0FD6 /* CreatePlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaylistViewController.swift; sourceTree = "<group>"; };
+		EA296FE0265F0B84002C0FD6 /* SelectPlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaylistTableViewController.swift; sourceTree = "<group>"; };
+		EA296FE3265F0FFE002C0FD6 /* GMusicModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GMusicModel.xcdatamodel; sourceTree = "<group>"; };
+		EA296FED265F4663002C0FD6 /* Track+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EA296FEE265F4663002C0FD6 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EA296FF1265FECEC002C0FD6 /* OfflineLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLibraryViewController.swift; sourceTree = "<group>"; };
+		EA296FF32664E348002C0FD6 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		EA296FF526650129002C0FD6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EA4C707D265E8252004B29AF /* MusicTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrack.swift; sourceTree = "<group>"; };
+		EA4C707F265E8270004B29AF /* MusicPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylist.swift; sourceTree = "<group>"; };
+		EA862987265D2C4800CA153A /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		EAA0C4702639C2A10028EC2B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAA0C474263C54760028EC2B /* SongSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchViewController.swift; sourceTree = "<group>"; };
 		EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		EAA0C478263C93420028EC2B /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
@@ -154,10 +178,12 @@
 		EA0BEA4C26374596009EDE74 /* GMusic */ = {
 			isa = PBXGroup;
 			children = (
+				EA296FED265F4663002C0FD6 /* Track+CoreDataClass.swift */,
+				EA296FEE265F4663002C0FD6 /* Track+CoreDataProperties.swift */,
 				EA0BEA4D26374596009EDE74 /* AppDelegate.swift */,
-				EAA0C472263AC20D0028EC2B /* GoogleService-Info.plist */,
 				EA0BEA4F26374596009EDE74 /* SceneDelegate.swift */,
 				EA0BEA5126374596009EDE74 /* ViewController.swift */,
+				EA296FDC265ED23E002C0FD6 /* GoogleService-Info.plist */,
 				EA0BEA5326374596009EDE74 /* Main.storyboard */,
 				EA0BEA5626374597009EDE74 /* Assets.xcassets */,
 				EA0BEA5826374597009EDE74 /* LaunchScreen.storyboard */,
@@ -167,6 +193,16 @@
 				EA076E1226507CC800FFE94B /* PlayerViewController.swift */,
 				EAA0C476263C768D0028EC2B /* MusicTableViewCell.swift */,
 				EAA0C47A263C94EF0028EC2B /* GMusic-Bridging-Header.h */,
+				EA862987265D2C4800CA153A /* PlaylistViewController.swift */,
+				EA4C707D265E8252004B29AF /* MusicTrack.swift */,
+				EA4C707F265E8270004B29AF /* MusicPlaylist.swift */,
+				EA296FDA265EC882002C0FD6 /* LibraryViewController.swift */,
+				EA296FDE265EF112002C0FD6 /* CreatePlaylistViewController.swift */,
+				EA296FE0265F0B84002C0FD6 /* SelectPlaylistTableViewController.swift */,
+				EA296FE2265F0FFE002C0FD6 /* GMusicModel.xcdatamodeld */,
+				EA296FF1265FECEC002C0FD6 /* OfflineLibraryViewController.swift */,
+				EA296FF32664E348002C0FD6 /* ProfileTableViewCell.swift */,
+				EA296FF526650129002C0FD6 /* ProfileViewController.swift */,
 			);
 			path = GMusic;
 			sourceTree = "<group>";
@@ -201,6 +237,7 @@
 				EA0BEA4726374596009EDE74 /* Frameworks */,
 				EA0BEA4826374596009EDE74 /* Resources */,
 				13B9201F84ECAE94D6F3D4E0 /* [CP] Embed Pods Frameworks */,
+				9FE96743832A76AE222A1148 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +276,7 @@
 				EA0BEA6826374598009EDE74 /* Frameworks */,
 				EA0BEA6926374598009EDE74 /* Resources */,
 				7AEE112BF738795DC0E257EC /* [CP] Embed Pods Frameworks */,
+				1782F764762CC863D3909575 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,8 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0BEA5A26374597009EDE74 /* LaunchScreen.storyboard in Resources */,
-				EAA0C473263AC20E0028EC2B /* GoogleService-Info.plist in Resources */,
 				EA0BEA5726374597009EDE74 /* Assets.xcassets in Resources */,
+				EA296FDD265ED23E002C0FD6 /* GoogleService-Info.plist in Resources */,
 				EA0BEA5526374596009EDE74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +374,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1782F764762CC863D3909575 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BB200E2371AFE001DAD2B04 /* [CP] Check Pods Manifest.lock */ = {
@@ -375,6 +430,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic-GMusicUITests/Pods-GMusic-GMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE96743832A76AE222A1148 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMusic/Pods-GMusic-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B12FECA7F3387D77F4629BA5 /* [CP] Check Pods Manifest.lock */ = {
@@ -428,9 +500,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA296FF2265FECEC002C0FD6 /* OfflineLibraryViewController.swift in Sources */,
+				EA862988265D2C4800CA153A /* PlaylistViewController.swift in Sources */,
+				EA296FDB265EC882002C0FD6 /* LibraryViewController.swift in Sources */,
+				EA296FF42664E348002C0FD6 /* ProfileTableViewCell.swift in Sources */,
+				EA296FDF265EF112002C0FD6 /* CreatePlaylistViewController.swift in Sources */,
+				EA4C7080265E8270004B29AF /* MusicPlaylist.swift in Sources */,
 				EAA0C4712639C2A10028EC2B /* RegisterViewController.swift in Sources */,
+				EA296FEF265F4663002C0FD6 /* Track+CoreDataClass.swift in Sources */,
+				EA4C707E265E8252004B29AF /* MusicTrack.swift in Sources */,
+				EA296FF626650129002C0FD6 /* ProfileViewController.swift in Sources */,
 				EA0BEA5226374596009EDE74 /* ViewController.swift in Sources */,
 				EA0BEA4E26374596009EDE74 /* AppDelegate.swift in Sources */,
+				EA296FF0265F4663002C0FD6 /* Track+CoreDataProperties.swift in Sources */,
+				EA296FE1265F0B84002C0FD6 /* SelectPlaylistTableViewController.swift in Sources */,
+				EA296FE4265F0FFE002C0FD6 /* GMusicModel.xcdatamodeld in Sources */,
 				EA076E1326507CC800FFE94B /* PlayerViewController.swift in Sources */,
 				EA0BEA5026374596009EDE74 /* SceneDelegate.swift in Sources */,
 				EAA0C475263C54760028EC2B /* SongSearchViewController.swift in Sources */,
@@ -785,6 +869,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA296FE2265F0FFE002C0FD6 /* GMusicModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA296FE3265F0FFE002C0FD6 /* GMusicModel.xcdatamodel */,
+			);
+			currentVersion = EA296FE3265F0FFE002C0FD6 /* GMusicModel.xcdatamodel */;
+			path = GMusicModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA0BEA4226374596009EDE74 /* Project object */;
 }

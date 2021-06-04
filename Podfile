@@ -10,6 +10,8 @@ target 'GMusic' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
   pod 'Alamofire', '~> 5.2'
 
   target 'GMusicTests' do
